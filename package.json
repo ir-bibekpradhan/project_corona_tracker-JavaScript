@@ -18,7 +18,7 @@
     "axios": "^1.6.0",
     "mstate-react": "1.6.4",
     "jest": "^29.7.0",
-    "pnpm":"10.29.2"
+    "pnpm": "10.29.2"
 
   },
   "devDependencies": {
