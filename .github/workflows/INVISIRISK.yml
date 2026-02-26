@@ -51,17 +51,3 @@ jobs:
         uses: invisirisk/pse-action@develop
         with:
           cleanup: "true"
-
-  gather_analytics:
-   runs-on: ubuntu-latest
-   name: Gather Analytics
-   needs: build-and-deploy
-   if: always()
-   steps:
-   - name: Gather Status
-     uses: invisirisk/pse-action@develop
-     with:
-      api_url: "https://app.dev.invisirisk.com"
-      app_token: ${{ secrets.IR_API_KEY }}
-      send_job_status: "true"
-      debug: "true"
